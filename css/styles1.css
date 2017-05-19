@@ -121,11 +121,11 @@ width: auto;
 }
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #61122f;
+  border: 2px solid black;
 }
 .navbar-header button.navbar-toggle {
   clear: both;
-  margin-top: 50px;
+ // margin-top: 50px;
 }
 
 hr.vertical
@@ -440,7 +440,7 @@ hr.vertical
 @media (max-width: 767px) {
   /* Header */
   .navbar-brand {
-    padding-top: 10px;
+    padding: 5px;
     height: 80px;
   }
   .navbar-brand h1 { /* Restaurant name */
@@ -454,7 +454,9 @@ hr.vertical
   .navbar-brand p img { /* Star-K */
     height: 20px;
   }
-
+#collapsableBtn{
+        float:right;
+    }
   #collapsable-nav a { /* Collapsed nav menu text */
     font-size: 1.2em;
   }
@@ -464,7 +466,7 @@ hr.vertical
   }
 
 #call-btn {  /* temporary fix */
-     padding-top:200px;   
+     padding-top:100px;   
 }
   #call-btn > a {
     font-size: 1.5em;
@@ -490,7 +492,9 @@ hr.vertical
     text-transform: uppercase;
   }
   /* End Header */
-
+#main-content{
+    margin-top:5px;
+}
   /* Footer */
   .panel-footer section {
     margin-bottom: 30px;
