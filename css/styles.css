@@ -6,21 +6,25 @@ body {
 }
 
 /** HEADER **/
+.navbar {
+    margin-bottom: 0px;
+}
 #header-nav {
   //background-color: black;
   border-radius: 0;
   border: 0;
+    margin-bottom: 50px;
 }
 
 #logo-img {
-  background: url('../images/logo.png') no-repeat;
-  width: 100px;
-  height: 100px;
-  margin: 10px 15px 10px 0;
+  background: url('../images/logo1.png') no-repeat;
+  width: 60px;
+  height: 60px;
+  margin: 15px 15px 10px 0;
 }
 
 .navbar-brand {
-  padding-top: 50px;
+ // padding-top: 50px;
 //    width: 80%;
 //    text-align: center;
 }
@@ -39,7 +43,7 @@ body {
   text-decoration: none;
 }
 .navbar-brand p { /* Kosher cert */
-  color: deepskyblue;
+  color: navy;
   text-transform: uppercase;
   font-size: .7em;
   margin-top: 15px;
@@ -49,7 +53,7 @@ body {
 }
 
 #nav-list, #nav-sublist {
-  margin-top: 10px;
+//  margin-top: 10px;
 }
 #nav-list a {
   color: #fff;
@@ -57,34 +61,29 @@ body {
 }
 #nav-list a:hover {
   //    background: #E7E7E7;
-    color:deepskyblue;
+    color:navy;
+}
+#nav-list li.active {
+    border-bottom: 5px solid white;
 }
 #nav-list a span {
   font-size: 1.8em;
 }
 
-#nav-sublist a {
-  color: #fff;
+#nav-sublist-left a, #nav-sublist-right a {
+  color: black; //#fff;
   text-align: center;
 }
-#nav-sublist a:hover {
+#nav-sublist-left a:hover, #nav-sublist-right a:hover {
   //background: #E7E7E7;
-    color:deepskyblue;
-}
-#nav-sublist a span {
-  font-size: 1.8em;
+    color:navy;
+    background-color: transparent;
 }
 
-#phone {
-  //margin-top: 5px;
-    font-size: 24px;
-}
-#phone a { /* Phone number */
-  text-align: right;
-  padding-bottom: 0;
-}
+#phone {}
+#phone a {}
 #phone div { /* We Deliver */
-  color: deepskyblue;
+  color: navy;
   text-align: right;
   padding-right: 15px;
 }
@@ -101,7 +100,7 @@ hr.vertical
 {
    width: 0px;
    height: 20px; /* or height in PX */
-   color: deepskyblue;
+   color: navy;
 } 
 /* END HEADER */
 
@@ -136,6 +135,19 @@ hr.vertical
 #testimonials p:nth-child(2) {
   margin-top: 25px;
 }
+#map-tile {
+  height: 180px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+//  border: 2px solid #3F0C1F;
+  overflow: hidden;
+}
+#map-tile h2{
+    margin-top:2px;
+    text-align: center;
+    color:black;
+}
 /* END FOOTER */
 
 
@@ -148,7 +160,7 @@ hr.vertical
     border-color: black;
 }
 #mainCarousel li.active {
-    background-color: deepskyblue;
+    background-color: navy;
 }
 
 #mainCarousel img {
@@ -156,20 +168,20 @@ hr.vertical
 }
 
 .carousel-caption {
-    color:deepskyblue;
+    color:navy;
     top:75px;
     left: 0px;
-    width: 400px;
+    width: 425px;
     padding: 10px;
     text-shadow: none;
 }
 .carousel-caption a {
     text-decoration: none;
     padding: 10px;
-    border: 2px solid black;
-    color:white;
-    background-color:deepskyblue;
-    font-size:1.5em;
+    border: 5px solid navy;
+    color:navy;
+   // background-color:navy;
+    font-size:1.8em;
     text-transform: uppercase;
 }
 
@@ -192,9 +204,9 @@ hr.vertical
 #about-tile a {
     text-decoration: none;
     padding: 10px;
-    border: 2px solid black;
-    color:white;
-    background-color:deepskyblue;
+    border: 5px solid black;
+    color:black;
+    //background-color:navy;
     font-size:1.5em;
     text-transform: uppercase;
 }
@@ -202,39 +214,6 @@ hr.vertical
 #home-tiles a{
     text-decoration: none;
     color:black;
-}
-#services-tile, #specials-tile, #contact-tile {
-  height: 400px;
-  width: 100%;
-  margin-bottom: 15px;
-  position: relative;
-  border-top: 1px solid #3F0C1F;
-  overflow: hidden;
-}
-#map-tile {
-  height: 180px;
-  width: 100%;
-  margin-bottom: 15px;
-  position: relative;
-//  border: 2px solid #3F0C1F;
-  overflow: hidden;
-}
-#services-tile:hover, #specials-tile:hover, #contact-tile:hover, #map-tile:hover {
-  box-shadow: 0 1px 5px 1px #cccccc;
-}
-#services-tile {
-  //background: url('../images/service_img.png') no-repeat;
-  //background-position: right;
-}
-#services-tile {
-  //background: url('../images/specials-tile.jpg') no-repeat;
-  //background-position: center;
-}
-.home-tiles-extra {
-    text-transform:uppercase;
-    color: deepskyblue;
-    font-size: 0.8em;
-    font-weight:bolder;
 }
 .home-tiles-title{
   position: absolute;
@@ -245,25 +224,37 @@ hr.vertical
   text-align: center;
   font-size: 1.6em;
   text-transform: uppercase;
-  background-color: deepskyblue;
+  background-color: navy;
   color: #fff;
   opacity: .8;
 }
-
-#services-tile h2, #specials-tile h2, #map-tile h2{
-    margin-top:2px;
-    text-align: center;
-    color:black;
+.home-tiles-extra {
+    text-transform:uppercase;
+    color: navy;
+    font-size: 0.8em;
+    font-weight:bolder;
 }
 
-#services-tile img, #specials-tile img, #contact-tile img{
+.hTiles {
+  height: 400px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border-top: 1px solid #3F0C1F;
+  overflow: hidden;
+}
+.hTiles img{
     width: 100%;
+    height: 264px;
     padding-bottom: 50px;
+}
+.hTiles:hover, #map-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
 }
 
 #stats {
     margin:auto;
-    background-color: deepskyblue;
+    background-color: navy;
 }
 
 .stat {
@@ -286,11 +277,11 @@ hr.vertical
 #clients-tile a {
     text-decoration: none;
     padding: 10px;
-    border: 2px solid black;
-    color:white;
-    background-color:deepskyblue;
+    border: 5px solid black;
+    color: black;
+   // background-color:navy;
     font-size:1.5em;
-
+    text-transform: uppercase;
 }
 
 #moretest {
@@ -299,7 +290,7 @@ hr.vertical
 
 #moretest a:hover{
     background-color: white;
-    color:deepskyblue;
+    color:navy;
 }
 .test{
     height: 300px;
@@ -322,86 +313,54 @@ hr.vertical
 .test div {
     margin-top:20px;
     float: right;
-    color: deepskyblue;
+    color: navy;
     font-size:0.8em;
 }
 /* END HOME PAGE */
 
-/* MENU CATEGORIES PAGE */
-.category-tile { 
+
+/* BEGIN - SERVICES PAGE */
+.stile {
+  height: 450px;
+  width: 100%;
+  margin-bottom: 50px;
   position: relative;
-  border: 2px solid #3F0C1F;
+  border-top: 1px solid #3F0C1F;
   overflow: hidden;
-  width: 200px;
-  height: 200px;
-  margin: 0 auto 15px;
+  color: black;
+  border-bottom: 2px solid black;
 }
-.category-tile span {
+.stile span{
   position: absolute;
-  bottom: 0;
+  top: 0;
   right: 0;
   width: 100%;
+  //border: 2px solid black;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.6em;
   text-transform: uppercase;
-  background-color: #000;
+  background-color: navy;
   color: #fff;
   opacity: .8;
 }
-.category-tile:hover {
-  box-shadow: 0 1px 5px 1px #cccccc;
+.stile h2{
+    margin-top:2px;
+    text-align: center;
+    color:black;
 }
 
-#menu-categories-title + div {
-  margin-bottom: 50px;
+.stile img{
+    width: 100%;
+    height: 234px;
+    padding-bottom: 20px;
 }
-/* END MENU CATEGORIES PAGE */
 
-/* SINGLE CATEGORY PAGE */
-.menu-item-tile {
-  margin-bottom: 25px;
+.stile h4{
+    color: navy;
+    text-align:justify;
 }
-.menu-item-tile hr {
-  width: 80%;
-}
-.menu-item-tile .menu-item-price {
-  font-size: 1.1em;
-  text-align: right;
-  margin-top: -15px;
-  margin-right: -15px;
-}
-.menu-item-tile .menu-item-price span {
-  font-size: .6em;
-}
-.menu-item-photo {
-  position: relative;
-  border: 2px solid #3F0C1F; 
-  overflow: hidden;
-  padding: 0;
-  margin-right: -15px;
-  margin-left: auto;
-  margin-bottom: 20px;
-  max-width: 250px;
-}
-.menu-item-photo div {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 80px;
-  background-color: #557c3e;
-  text-align: center;
-}
-.menu-item-description {
-  padding-right: 30px;
-}
-h3.menu-item-title {
-  margin: 0 0 10px;
-}
-.menu-item-details {
-  font-size: .9em;
-  font-style: italic;
-}
-/* END SINGLE CATEGORY PAGE */
+/* END - SERVICES PAGE */
+
 
 
 /********** Large devices only **********/
@@ -475,10 +434,18 @@ h3.menu-item-title {
     display: block;
     margin: 0 20px;
     padding: 10px;
-    border: 2px solid #fff;
-    background-color: #f6b319;
-    color: #951c49;
+    border: 2px solid navy;
+    //background-color: #f6b319;
+    color: navy;
   }
+    #social-btn{
+        padding: 10px;
+        text-align: center;
+    }
+    #social-btn > a {
+        color: navy; 
+        padding: 10px;
+    }
   #xs-deliver {
     margin-top: 5px;
     font-size: .7em;
