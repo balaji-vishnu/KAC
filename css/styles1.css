@@ -120,9 +120,19 @@ width: auto;
   padding-right: 15px;
 }
 
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 2px solid black;
+.navbar-header button.navbar-toggle{
+    border:none;
+    background-color: white;
+    margin-top: 0px;
 }
+.navbar-header .icon-bar {
+  border: 2px solid black;
+    border-radius: 2em;
+}
+.navbar-header button.navbar-toggle:hover{
+    background-color: navy;
+}
+
 .navbar-header button.navbar-toggle {
   clear: both;
  // margin-top: 50px;
@@ -468,10 +478,10 @@ hr.vertical
 #call-btn {  /* temporary fix */
      padding-top:100px;   
 }
-  #call-btn > a {
+  #call-btn > a, #appt-btn > a {
     font-size: 1.5em;
     display: block;
-    margin: 0 20px;
+    margin: 0 5px;
     padding: 10px;
     border: 2px solid navy;
     //background-color: #f6b319;
@@ -484,6 +494,10 @@ hr.vertical
     #social-btn > a {
         color: navy; 
         padding: 10px;
+    }
+    #appt-btn{
+        padding: 10px;
+        text-align: center;
     }
   #xs-deliver {
     margin-top: 5px;
