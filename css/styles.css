@@ -201,7 +201,7 @@ hr.vertical
 
 
 #mainCarousel li {
-    width: 50px;
+    //width: 50px;
     border-color: black;
 }
 #mainCarousel li.active {
@@ -235,18 +235,41 @@ hr.vertical
   border: 2px solid #3F0C1F;
 }
 
-#about-tile, #clients-tile {
+#about{
+    background-color: navy;
+    color: white;
+    margin:auto;
+    margin-bottom: 50px; 
+    text-align: center;
+    height: 450px;
+}
+
+#about h1 {
+}
+#about p {
+    font-size: 20px;
+}
+#about a {
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    border: 5px solid white;
+    color:white;
+    font-size:1.5em;
+    text-transform: uppercase;
+}
+.titleTile, #clients-tile {
     color: black;
     margin:auto;
     margin-bottom: 50px;
 }
-#about-tile h1{
+.titleTile h1{
     text-align: center;
 }
-#about-tile p {
+.titleTile p {
     font-size: 20px;
 }
-#about-tile a {
+.titleTile a {
     text-decoration: none;
     padding: 10px;
     border: 5px solid black;
@@ -254,6 +277,10 @@ hr.vertical
     //background-color:navy;
     font-size:1.5em;
     text-transform: uppercase;
+}
+
+#home-tiles{
+    margin-top: -250px;
 }
 
 #home-tiles a{
@@ -539,17 +566,19 @@ hr.vertical
     height: 675px;
   }
 
-
+    #mainCarousel{
+        //height: 675px;
+    }
 }
 
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
   /* Header */
   #logo-img {
-    background: url('../images/restaurant-logo_medium.png') no-repeat;
-    width: 100px;
-    height: 100px;
-    margin: 5px 5px 5px 0;
+    background: url('../images/logo1.png') no-repeat;;
+    width: 60px;
+    height: 60px;
+    //margin: 5px 5px 5px 0;
   }
   /* End Header */
 
@@ -568,6 +597,9 @@ hr.vertical
     background: url('../images/jumbotron_768.jpg') no-repeat;
     height: 432px;
   }
+    #mainCarousel{
+        height: 432px;
+    }
   /* End Home Page */
 }
 
@@ -652,20 +684,6 @@ hr.vertical
     margin-top: 30px;
     padding: 0;
   }
-  #menu-tile, #specials-tile {
-    width: 360px;
-    margin: 0 auto 15px;
-  }
-
-  .menu-item-photo {
-    margin-right: auto;
-  }
-  .menu-item-tile .menu-item-price {
-    text-align: center;
-  }
-  .menu-item-description {
-    text-align: center;;
-  }
 }
 
 
@@ -679,10 +697,6 @@ hr.vertical
   /* End Header */
   
   /* Home page */
-  #menu-tile, #specials-tile {
-    width: 280px;
-    margin: 0 auto 15px;
-  }
 
   .col-xxs-12 {
     position: relative;
