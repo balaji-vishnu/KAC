@@ -460,16 +460,17 @@ hr.vertical
     color:black;
     position: relative;
     overflow: hidden;
-    border-top: 1px solid #3F0C1F;
+    //border-top: 1px solid #3F0C1F;
     border-bottom: 2px solid black;
-    margin-bottom: 50px;
+    margin: 50px 0px;
 }
 
 
-.ctile h3, h5{
+.ctile h3{
     color:navy;
     text-align: center;
 }
+
 
 .ctile img{
     max-width: 100%;
